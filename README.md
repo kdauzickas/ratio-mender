@@ -42,4 +42,4 @@ go build -ldflags -Hwindowsgui ratiomender.go icon.go
 ```
 This will build the app to launch withought a console window. When built like this `-l` and `-h` flags do nothing.
 
-**Disclaimer:** I take no responsibility of what might happen while you use this piece of software. You most likely *will get baned* if you're cought using it. Note that this project is my way of learning Go and it's probably not optimal and buggy. Basically, use it at your own risk.
+**Disclaimer:** I take no responsibility of what might happen while you use this piece of software. You most likely *will get banned* if you're cought using it. Note that this project is my way of learning Go and it's probably not optimal and buggy. Basically, use it at your own risk.
