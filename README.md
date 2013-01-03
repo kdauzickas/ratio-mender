@@ -21,7 +21,7 @@ Options:
   -u=1: By how much should the upload be multiplied
 ```
 
-You can access the log with last 100 entries of current session by going http://localhost:*port*/log, where port - the port you reserved for RM, e.g. http://localhost:57998/log
+You can access the log with last 100 entries of current session by going http://localhost:port/log, where port - the port you reserved for RM, e.g. http://localhost:57998/log
 
 On linux you can somewhat simulate a daemon by running this command
 ```
