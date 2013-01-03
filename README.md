@@ -1,4 +1,4 @@
-############# ADD DATA HOW TO MEND RATIO!
+### ADD DATA HOW TO MEND RATIO!
 
 ### Ratio mender 
 ... is an app that helps you improve your torrent ratio.
