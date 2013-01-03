@@ -19,7 +19,7 @@ var Port = flag.Int("p", 57998, "Port to listen")
 var LogToOutput = flag.Bool("l", false, "Print log entries to output")
 var Help = flag.Bool("h", false, "Print this help and exit")
 var Log = ring.New(100)
-var Version = "0.1"
+var Version = "0.1.1"
 var StartTime string
 
 func main() {
@@ -154,7 +154,7 @@ func showLog(w http.ResponseWriter, r *http.Request) {
 		"[%s] Ratio Mender %s Listening: 127.0.0.1:%d. Upload: x%f, Download: x%f, Switch: %v\n\n",
 		StartTime, Version, *Port, *Up, *Down, *Switch)))
 
-	t := Log
+	t := Log.Prev()
 	for i := Log.Len(); i > 0; i-- {
 		if v, ok := t.Value.([]byte); ok {
 			w.Write(v)
