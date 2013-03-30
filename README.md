@@ -7,7 +7,7 @@ RM works as a proxy so you'll need to configure your client to use it. Basically
 [Deluge](http://s2.postimage.org/e4m8jbwtl/deluge.png) | [uTorrent](http://s2.postimage.org/ra1qpfqp5/utorrent.png)
 
 ```
-Ratio mender 0.1.1 usage:
+Ratio mender 0.2.0 usage:
   ratiomender [options]
 
 Options:
@@ -33,12 +33,12 @@ Or adding the following command to you start up script (Ubuntu: gnome-session-pr
 ### Building
 On linux just run
 ```
-go build ratiomender.go icon.go
+go build ratiomender.go
 ```
 
 On windows you might want to add a few build flags:
 ```
-go build -ldflags -Hwindowsgui ratiomender.go icon.go
+go build -ldflags -Hwindowsgui ratiomender.go
 ```
 This will build the app to launch withought a console window. When built like this `-l` and `-h` flags do nothing.
 
